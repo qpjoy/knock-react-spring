@@ -8,6 +8,7 @@ import WordAnimation from "./components/word-animation/WordAnimation";
 import Process from "./components/progress/Progress";
 import BGImage from "./components/image/BGImage";
 import Image3D from "./components/image/Image3D";
+import FadeIn from "./components/animation/FadeIn";
 
 function Root() {
     return (
@@ -15,6 +16,7 @@ function Root() {
             <>
                 <Route path="/" exact={true} component={App}/>
                 <Route path="/carousel" exact={true} component={Carousel}/>
+                <Route path="/fade-in" exact={true} component={FadeIn}/>
                 <Route path="/word-animation" component={WordAnimation}/>
                 <Route path="/process" component={Process} />
                 <Route path="/bg-image" component={BGImage} />
